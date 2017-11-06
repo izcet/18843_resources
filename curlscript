@@ -1,0 +1,6 @@
+curl -i -X PROPFIND localhost:4444 --upload-file - -H "Depth: 1" <<end
+<?xml version="1.0"?>
+<a:propfind xmlns:a="DAV:">
+<a:prop><a:resourcetype/></a:prop>
+</a:propfind>
+end
